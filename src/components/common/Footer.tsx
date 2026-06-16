@@ -47,10 +47,8 @@ const Footer = ({scrollToSection}:any) =>{
                 maxWidth: "320px",
               }}
             >
-              Senior Frontend Engineer
-              building scalable enterprise
-              applications using React,
-              Angular and Java.
+              Senior Frontend-Focused Full Stack Engineer
+Building scalable enterprise applications with Angular, React, Next.js, Java, and Spring Boot.
             </Typography>
 
             <Stack
@@ -61,7 +59,7 @@ const Footer = ({scrollToSection}:any) =>{
 
               {/* GITHUB */}
 
-              <IconButton
+              {/* <IconButton
                 component="a"
                 href="https://github.com/jaaee"
                 target="_blank"
@@ -75,7 +73,7 @@ const Footer = ({scrollToSection}:any) =>{
                 }}
               >
                 <FaGithub />
-              </IconButton>
+              </IconButton> */}
 
               {/* LINKEDIN */}
 

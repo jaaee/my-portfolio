@@ -2,25 +2,27 @@ import { Container, Stack, Box, Typography, Button, Grid, Card, CardContent, Chi
 import  { FaArrowRight } from "react-icons/fa"
 
 const projects = [
+  // {
+  //   title: "Enterprise Dashboard",
+  //   tech: ["React", "TypeScript", "Material UI", "Recharts"],
+  //   desc:
+  //     "Comprehensive analytics dashboard with role-based access, charts, tables and API integration.",
+  // },
   {
-    title: "Enterprise Dashboard",
-    tech: ["React", "TypeScript", "Material UI", "Recharts"],
+    title: "Angular Admin Dashboard",
+    tech: ["Angular", "Typescript", "RxJS", "Material","Java","Spring Boot"],
     desc:
-      "Comprehensive analytics dashboard with role-based access, charts, tables and API integration.",
-  },
-  {
-    title: "Angular Admin Panel",
-    tech: ["Angular", "NgRx", "RxJS", "Tailwind"],
-    desc:
-      "Enterprise admin panel with dynamic forms, routing guards and scalable architecture.",
-  },
-  {
-    title: "E-Commerce Platform",
-    tech: ["React", "Java", "Spring Boot", "MySQL"],
-    desc:
-      "Full stack application with JWT authentication and payment integration.",
-  },
+      " Comprehensive analytics dashboard with role-based access, charts, tables and API integration.Developed an enterprise-grade Angular 21 dashboard with Angular Material, interactive charts, KPI cards, risk monitoring, alert management, and advanced data tables.",
+  }
+  // {
+  //   title: "E-Commerce Platform",
+  //   tech: ["React", "Java", "Spring Boot", "MySQL"],
+  //   desc:
+  //     "Full stack application with JWT authentication and payment integration.",
+  // },
 ];
+
+import projectImg from '../../assets/project.png';
 
 const Projects = () =>{
     return(  <Container maxWidth="xl" sx={{ pb: 10 }}>
@@ -46,7 +48,7 @@ const Projects = () =>{
             </Typography>
           </Box>
 
-          <Button endIcon={<FaArrowRight />}>View All Projects</Button>
+          {/* <Button endIcon={<FaArrowRight />}>View All Projects</Button> */}
         </Stack>
 
         <Grid container spacing={4}>
@@ -61,11 +63,22 @@ const Projects = () =>{
                 }}
               >
                 <Box
+                
                   sx={{
                     height: 220,
                     bgcolor: "#dbe4ff",
-                  }}
-                />
+                  }}>
+
+                    <img
+    src={projectImg}
+    alt="Project"
+    style={{
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover'
+    }}
+  />
+                    </Box>
 
                 <CardContent sx={{ p: 4 }}>
                   <Typography variant="h5" fontWeight={700}>
@@ -76,6 +89,7 @@ const Projects = () =>{
                     direction="row"
                     spacing={1}
                     flexWrap="wrap"
+                     gap={1}
                     mt={2}
                   >
                     {project.tech.map((tech) => (
@@ -84,7 +98,7 @@ const Projects = () =>{
                         label={tech}
                         sx={{
                           bgcolor: "#eef2ff",
-                          color: "#5b6cff",
+                          color: "#5b6cff"
                         }}
                       />
                     ))}
@@ -103,6 +117,10 @@ const Projects = () =>{
                   <Button
                     endIcon={<FaArrowRight />}
                     sx={{ mt: 3, fontWeight: 600 }}
+                     href="https://admin-dashboard-gamma-rosy-54.vercel.app/dashboard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    
                   >
                     View Project
                   </Button>

@@ -43,7 +43,7 @@ const Navbar = ( {scrollToSection , activeSection} :any) =>{
             position: "relative",
 
             "&:hover": {
-              color: "#7b61ff",
+              color: "#7b61ff"
             },
 
             "&::after": {
@@ -61,10 +61,7 @@ const Navbar = ( {scrollToSection , activeSection} :any) =>{
               transition: "0.3s",
             },
 
-            "&:hover::after": {
-              transform:
-                "scaleX(1)",
-            },
+          
 
              ...(activeSection === item.toLowerCase() && {
     

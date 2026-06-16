@@ -9,7 +9,7 @@ const learningCards = [
     icon: <FaReact />,
   },
    {
-    title: "Angular 18",
+    title: "Angular 21",
     icon: <FaAngular/>,
   },
 //   {
@@ -63,6 +63,27 @@ const Experience= () =>{
               }}
             >
               <CardContent sx={{ p: 4 }}>
+
+                 <Typography variant="h6" fontWeight={700} >
+                  Volunteer Intern
+                </Typography>
+
+                <Typography sx={{ color: "#5b6cff", mt: 1 }}>
+                 2023-2024
+                </Typography>
+
+                <Typography
+                  sx={{
+                    mt: 2,
+                    color: "#64748b",
+                    lineHeight: 1.8,
+                  }}
+                >
+                  Worked on React, Next.js, TypeScript, Material UI, MySQL, and AI/LLM integrations to deliver scalable, intelligent web applications.
+                </Typography>
+
+                <Divider sx={{ my: 2.5 }} />
+
                 <Typography variant="h6" fontWeight={700} >
                   Software Engineer
                 </Typography>

@@ -65,12 +65,13 @@ const ProfileSummary = ({scrollToSection}:any) =>{
                   maxWidth: "700px",
                   lineHeight: 1.9,
                   fontSize: "18px",
+                  textAlign:"justify"
                 }}
               >
-                Frontend engineer with 7.5+ years of experience building
-                scalable enterprise applications and modern user interfaces.
-                Passionate about clean architecture, performance optimization
-                and modern frontend technologies.
+                Frontend-focused Full Stack Developer with 7.5+ years of experience designing
+                and developing enterprise-grade web applications. 
+                Specialized in creating performant, accessible, and user-centric experiences using Angular and React, 
+                with working experience across backend services, APIs, and Microservices using Java Spring Boot.
               </Typography>
 
               <Stack direction="row" spacing={3} mt={5}>
@@ -118,7 +119,7 @@ const ProfileSummary = ({scrollToSection}:any) =>{
               {/* SOCIAL */}
 
               <Stack direction="row" spacing={2} mt={5}>
-                 <Tooltip title="GitHub">
+                 {/* <Tooltip title="GitHub">
                     <Avatar
                       onClick={() =>
                         window.open(
@@ -138,7 +139,7 @@ const ProfileSummary = ({scrollToSection}:any) =>{
                     >
                       <FaGithub />
                     </Avatar>
-                  </Tooltip>
+                  </Tooltip> */}
 
                {/* LINKEDIN */}
 
