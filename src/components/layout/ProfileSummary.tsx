@@ -1,5 +1,5 @@
 import { Avatar, Box, Button, Card, CardContent, Container, Grid, Stack, Tooltip, Typography } from "@mui/material";
-import { FaArrowRight, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaArrowRight, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const ProfileSummary = ({scrollToSection}:any) =>{
 

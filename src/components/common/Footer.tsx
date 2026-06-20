@@ -1,5 +1,5 @@
 import { Box, Container, Grid, IconButton, Stack, Typography } from "@mui/material";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const linkStyle = {
   cursor: "pointer",
