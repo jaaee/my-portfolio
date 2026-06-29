@@ -69,7 +69,7 @@ const Experience= () =>{
                 </Typography>
 
                 <Typography sx={{ color: "#5b6cff", mt: 1 }}>
-                 2023-2024
+                 2022-2025
                 </Typography>
 
                 <Typography
@@ -79,7 +79,7 @@ const Experience= () =>{
                     lineHeight: 1.8,
                   }}
                 >
-                  Worked on React, Next.js, TypeScript, Material UI, MySQL, and AI/LLM integrations to deliver scalable, intelligent web applications.
+                  Worked on React, Next.js, TypeScript, Material UI, MySQL, Java and AI/LLM integrations to deliver scalable, intelligent web applications.
                 </Typography>
 
                 <Divider sx={{ my: 2.5 }} />
