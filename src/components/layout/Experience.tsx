@@ -1,5 +1,5 @@
 import { Container, Grid, Typography, Card, CardContent, Divider, Stack, Box } from "@mui/material"
-import { FaAngular, FaReact } from "react-icons/fa";
+import { FaAngular, FaJava, FaReact } from "react-icons/fa";
 import { HiOutlineCodeBracket } from "react-icons/hi2";
 import { MdSpeed } from "react-icons/md";
 
@@ -11,6 +11,10 @@ const learningCards = [
    {
     title: "Angular 21",
     icon: <FaAngular/>,
+  },
+    {
+    title: "Java 17 , Spring Boot and Microservice Arch.",
+    icon: <FaJava/>,
   },
 //   {
 //     title: "System Design",
