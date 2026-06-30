@@ -1,5 +1,11 @@
-import { AppBar, Button, Container, Stack, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Container, Drawer, List, ListItem, ListItemButton, ListItemText, Stack, Toolbar, Typography } from "@mui/material";
 import { FaDownload } from "react-icons/fa";
+import { useState } from "react";
+import { FaBars } from "react-icons/fa";
+import {
+  IconButton
+  
+} from "@mui/material";
 
 const navItems = [
                 "Home",
@@ -8,7 +14,11 @@ const navItems = [
                 "Skills",
                 "Contact",
               ]
+
 const Navbar = ( {scrollToSection , activeSection} :any) =>{
+
+    const [open, setOpen] = useState(false);
+
     return (<AppBar
         position="static"
         elevation={0}
@@ -30,7 +40,12 @@ const Navbar = ( {scrollToSection , activeSection} :any) =>{
               Jaaee Shahapurkar
             </Typography>
 
-            <Stack direction="row" spacing={4} alignItems="center">
+            <Stack direction="row" spacing={4} alignItems="center"  sx={{
+    display: {
+      xs: "none",
+      md: "flex",
+    },
+  }}>
               {navItems.map((item) => (
                  <Typography
           key={item}
@@ -99,8 +114,66 @@ const Navbar = ( {scrollToSection , activeSection} :any) =>{
                 Download Resume
               </Button>
             </Stack>
-          </Toolbar>
+            <IconButton
+  sx={{
+    display: {
+      xs: "flex",
+      md: "none",
+    },
+    color: "#fff",
+  }}
+  onClick={() => setOpen(true)}
+>
+  <FaBars />
+</IconButton>
+                     </Toolbar>
         </Container>
+        <Drawer
+  anchor="right"
+  open={open}
+  onClose={() => setOpen(false)}
+>
+  <Box
+    sx={{
+      width: 250,
+      bgcolor: "#050816",
+      height: "100%",
+      color: "#fff",
+      p: 2,
+    }}
+  >
+    <List>
+      {navItems.map((item) => (
+        <ListItem key={item} disablePadding>
+          <ListItemButton
+            onClick={() => {
+              scrollToSection(item.toLowerCase());
+              setOpen(false);
+            }}
+          >
+            <ListItemText primary={item} />
+          </ListItemButton>
+        </ListItem>
+      ))}
+    </List>
+
+    <Button
+      component="a"
+      href="/Jaaee _Shahapurkar.pdf"
+      download="Jaaee_Shahapurkar_Resume.pdf"
+      variant="contained"
+      fullWidth
+      startIcon={<FaDownload />}
+      sx={{
+        mt: 2,
+        bgcolor: "#5b6cff",
+        textTransform: "none",
+      }}
+    >
+      Download Resume
+    </Button>
+  </Box>
+</Drawer>
       </AppBar>)
 }
 
