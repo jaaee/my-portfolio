@@ -29,6 +29,19 @@ const Navbar = ( {scrollToSection , activeSection} :any) =>{
       >
         <Container maxWidth="xl">
           <Toolbar sx={{ py: 1 }}>
+                  <IconButton
+  sx={{
+    display: {
+      xs: "flex",
+      md: "none",
+    },
+    color: "#fff",
+    marginRight:"12px"
+  }}
+  onClick={() => setOpen(true)}
+>
+  <FaBars />
+</IconButton>
             <Typography
               variant="h5"
               sx={{
@@ -114,18 +127,7 @@ const Navbar = ( {scrollToSection , activeSection} :any) =>{
                 Download Resume
               </Button>
             </Stack>
-            <IconButton
-  sx={{
-    display: {
-      xs: "flex",
-      md: "none",
-    },
-    color: "#fff",
-  }}
-  onClick={() => setOpen(true)}
->
-  <FaBars />
-</IconButton>
+      
                      </Toolbar>
         </Container>
         <Drawer
