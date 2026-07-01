@@ -68,7 +68,7 @@ const ProfileSummary = ({scrollToSection}:any) =>{
                   textAlign:"justify"
                 }}
               >
-                Frontend-focused Full Stack Developer with 7.5+ years of experience designing
+                Frontend-focused Full Stack Developer with 9+ years of experience designing
                 and developing enterprise-grade web applications. 
                 Specialized in creating performant, accessible, and user-centric experiences using Angular and React, 
                 with working experience across backend services, APIs, and Microservices using Java Spring Boot.
@@ -194,7 +194,7 @@ const ProfileSummary = ({scrollToSection}:any) =>{
             <Grid item xs={12} md={5}>
               <Stack spacing={3}>
                 {[
-                  ["7.5+", "Years of Experience"],
+                  ["9+", "Years of Experience"],
                   ["15+", "Features Delivered"],
                   ["Multiple Production Releases"],
                 ].map((item) => (
